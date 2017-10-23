@@ -1,1 +1,5 @@
 node_modules/
+将删除 .idea/
+将删除 public/images/
+将删除 public/javascripts/
+将删除 yarn.lock
