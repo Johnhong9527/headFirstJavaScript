@@ -1,25 +1,22 @@
 window.onload = function () {
   let btnEnter = document.getElementById('btnEnter');
   let coordinate = document.getElementById('coordinate');
-  // 给`btnEnter`元素,添加点击事件
+  // 给`btnEnter`文档对象,添加事件监听器
   // btnEnter.addEventListener('click', btn);
   // coordinate.addEventListener('keydown', btn);
   btnEnter.onclick = btn
   coordinate.onkeypress = key;
-
   function key(e) {
     if (e.charCode === 13) {
       btn()
     }
   }
-
   // 转化坐标
   let digital = {'A': 0, 'B': 7, 'C': 14, 'D': 21, 'E': 28, 'F': 35, 'G': 42};
-  // 初始化战舰位置
+  // 使用随机数,初始化战舰位置
   let ships = {0: Math.floor(Math.random() * 48), 1: Math.floor(Math.random() * 48), 2: Math.floor(Math.random() * 48)};
   console.log(ships)
-
-  // 获取所有的td表格
+  // 获取所有的`td`
   function btn() {
     console.log(coordinate.value);
     console.log(ships)
