@@ -5,6 +5,7 @@ window.onload = function () {
   btnEnter.onclick = btn;
   coordinate.onkeypress = key;
   function key(e) {
+    // 监听`enter`键是否被点击
     if (e.charCode === 13) {
       btn()
     }
